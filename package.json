@@ -1,0 +1,56 @@
+{
+  "name": "canvas_cheat_blocker",
+  "version": "1.1.0",
+  "main": "index.js",
+  "description": "Canvas desktop wrapper with cheat blocking",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+
+  "devDependencies": {
+    "electron-builder": "^26.0.12",
+    "electron": "^35.1.5"
+  },
+  "build": {
+    "appId": "com.yourcompany.canvascheatblocker",
+    "productName": "Canvas Cheat Blocker",
+    "files": [
+      "index.js"
+    ],
+    "extraResources": [
+      {
+        "from": "BackgroundManager.exe",
+        "to": "BackgroundManager.exe"
+      },
+      {
+        "from": "libgcc_s_dw2-1.dll",
+        "to": "libgcc_s_dw2-1.dll"
+      },
+      {
+        "from": "libstdc++-6.dll",
+        "to": "libstdc++-6.dll"
+      },
+      {
+        "from": "canvas_logo.png",
+        "to": "canvas_logo.png"
+      }
+      
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "canvas_logo.png"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": true,
+      "allowElevation": true,
+      "createDesktopShortcut": true
+    }
+  }
+}
