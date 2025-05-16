@@ -5,7 +5,12 @@ This is a canvas cheat blocker program build to handles extreme test use cases p
 this was written in Electron JS + C++ before modding this app you have to 
 
 
-Initialize Node Modules
+### Please remember to include DLL's when you add in custom c++ codes
+
+
+
+## Initial node Modules setup and configuration:
+
 1. npm init
 
 
@@ -21,8 +26,8 @@ Intall electron builder to package
 
 
 
-######################################################################
-How to build and run project :
+
+## How to build and run project :
 
 use npm run start for start testing on developement
 
