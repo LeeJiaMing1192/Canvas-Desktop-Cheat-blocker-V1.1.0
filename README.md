@@ -11,7 +11,8 @@ Use a Dependency Walker to scan for DLL's needed for your c++ code and upload it
 
 #### Open package.json 
 
- "extraResources": [
+ "extraResources": 
+ [
       {
         "from": "BackgroundManager.exe",
         "to": "BackgroundManager.exe"
@@ -28,11 +29,7 @@ Use a Dependency Walker to scan for DLL's needed for your c++ code and upload it
         "from": "canvas_logo.png",
         "to": "canvas_logo.png"
       }
-      
-    ],
-    "directories": {
-      "buildResources": "assets"
-    },
+]
 
 
 ## Initial node Modules setup and configuration:
