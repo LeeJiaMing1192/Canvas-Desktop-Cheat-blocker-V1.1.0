@@ -11,17 +11,17 @@ this was written in Electron JS + C++ before modding this app you have to
 
 ## Initial node Modules setup and configuration:
 
-1. npm init
-
-
-Install electron on your project folder
-2. npm install electron --save-dev
+1. npm init 
 
 
 
+2. npm install electron --save-dev //Install electron on your project folder
 
-Intall electron builder to package 
-3. npm install electron-builder --save-dev
+
+
+
+
+3. npm install electron-builder --save-dev //Intall electron builder to package 
 
 
 
