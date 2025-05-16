@@ -5,8 +5,34 @@ This is a canvas cheat blocker program build to handles extreme test use cases p
 this was written in Electron JS + C++ before modding this app you have to 
 
 
-### Please remember to include DLL's when you add in custom c++ codes
+### How to include DLL's when you add in custom c++ codes
 
+Use a Dependency Walker to scan for DLL's needed for your c++ code and upload it to the main folder 
+
+#### Open package.json 
+
+ "extraResources": [
+      {
+        "from": "BackgroundManager.exe",
+        "to": "BackgroundManager.exe"
+      },
+      {
+        "from": "libgcc_s_dw2-1.dll",
+        "to": "libgcc_s_dw2-1.dll"
+      },
+      {
+        "from": "libstdc++-6.dll", // Heres an example of how to add in DLL's
+        "to": "libstdc++-6.dll" // Heres an example of how to add in DLL's
+      },
+      {
+        "from": "canvas_logo.png",
+        "to": "canvas_logo.png"
+      }
+      
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
 
 
 ## Initial node Modules setup and configuration:
@@ -29,6 +55,9 @@ this was written in Electron JS + C++ before modding this app you have to
 
 ## How to build and run project :
 
-use npm run start for start testing on developement
+use *npm run start* for start testing on developement
 
-use npm run dist for package everything and output out in the /dist folder
+use *npm run dist for* package everything and output out in the /dist folder
+
+
+## Feel free to request merge commit and fixes when you wanted !
