@@ -43,9 +43,8 @@ Use a Dependency Walker to scan for DLL's needed for your c++ code and upload it
 
 
 
-
-3. npm install electron-builder --save-dev //Intall electron builder to package 
-
+(Before building PLEASE ensure using a dependancies checker and put in the packages lock)
+3. npm install electron-builder --save-dev //Intall electron builder to package  
 
 
 
