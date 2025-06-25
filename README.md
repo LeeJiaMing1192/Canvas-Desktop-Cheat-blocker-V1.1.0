@@ -43,7 +43,11 @@ Use a Dependency Walker to scan for DLL's needed for your c++ code and upload it
 
 
 
-(Before building PLEASE ensure using a dependancies checker and put in the packages lock)
+(Before building PLEASE ensure using a dependancies checker and put in the packages lock) with dependancies crawler
+and put it in here :  {
+        "from": "canvas_logo.png",
+        "to": "canvas_logo.png"
+      }
 3. npm install electron-builder --save-dev //Intall electron builder to package  
 
 
